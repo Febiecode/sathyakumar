@@ -1,5 +1,6 @@
 import React from 'react'
 import { MoveDown } from "lucide-react"
+import SwirlMouseEffect from '../atoms/SwirlMouseEffect'
 
 
 const HeroBanner = () => {
@@ -7,7 +8,7 @@ const HeroBanner = () => {
     return (
         <>
             <main>
-
+                <SwirlMouseEffect />
                 <div className='relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]'>
                     <div className='flex cursor-default flex-col space-y-3 absolute top-[180px]'>
                         <h1 className='text-5xl font-semibold sm:text-7xl md:text-8xl xl:text-9xl'>Sathyakumar</h1>
