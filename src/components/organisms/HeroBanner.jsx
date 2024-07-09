@@ -1,0 +1,29 @@
+import React from 'react'
+import { MoveDown } from "lucide-react"
+
+
+const HeroBanner = () => {
+
+    return (
+        <>
+            <main>
+
+                <div className='relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]'>
+                    <div className='flex cursor-default flex-col space-y-3 absolute top-[180px]'>
+                        <h1 className='text-5xl font-semibold sm:text-7xl md:text-8xl xl:text-9xl'>Sathyakumar</h1>
+                        <h2 className='text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl'>I build things for the web.</h2>
+                        <a href="/" className='horizontal-underline text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-2xl'>Read more</a>
+                    </div>
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform md:bottom-8">
+                        <div className='flex cursor-pointer flex-col items-center justify-center'>
+                            <MoveDown size={20} />
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </>
+    )
+}
+
+export default HeroBanner
