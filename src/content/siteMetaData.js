@@ -14,7 +14,7 @@ const siteMetadata = {
     github: 'https://github.com/Febiecode/',
     // twitter: 'https://twitter.com/dalelarroder',
     // facebook: 'https://facebook.com/dlarroder',
-    linkedin: 'www.linkedin.com/in/sathyakumar-srinivasan-09166b208',
+    linkedin: 'https://www.linkedin.com/in/sathyakumar-srinivasan-09166b208',
     // spotify: 'https://open.spotify.com/user/12162121994?si=e685b3546f414967',
     // steam: 'https://steamcommunity.com/id/dlarroder/',
     locale: 'en-US',
