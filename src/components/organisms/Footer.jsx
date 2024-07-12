@@ -6,8 +6,8 @@ import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='py-10'>
-            <div className="flex flex-col items-center space-y-2 text-sm sm:flex-row sm:justify-between sm:text-base">
+        <div className='py-10 '>
+            <div className="max-w-5xl mx-auto flex flex-col items-center space-y-2 text-sm sm:flex-row sm:justify-between sm:text-base">
                 <ul className="flex space-x-2">
                     <li>{`© ${new Date().getFullYear()}`}</li>
                     <li>{` • `}</li>

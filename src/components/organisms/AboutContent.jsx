@@ -113,7 +113,6 @@ const AboutContent = () => {
 
                         </div>
                     </main>
-                    <Footer />
                 </div>
             </main>
         </>

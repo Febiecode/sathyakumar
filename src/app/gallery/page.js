@@ -1,15 +1,15 @@
-import About from '@/components/pages/About'
+'use client'
+import React from 'react'
+import Gallery from '@/components/pages/Gallery'
 import Navbar from '@/components/organisms/Navbar'
 import Footer from '@/components/organisms/Footer'
-import React from 'react'
 
 const page = () => {
   return (
     <div>
       <Navbar />
-      <About />
+      <Gallery />
       <Footer />
-
     </div>
   )
 }

@@ -13,7 +13,7 @@ const Sidebar = () => {
     <div className="flex">
       <div className={`fixed inset-0 z-30 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} w-64 bg-black text-white`}>
         <div className="p-4 ">
-          <h2 className="text-2xl font-bold">s.</h2>
+          <span className="text-2xl font-bold horizontal-underline"><Link href={"/"}>s.</Link></span>
           
             <ul className='flex flex-col justify-center items-center text-lg'>
               <li className='py-2'>
@@ -21,6 +21,9 @@ const Sidebar = () => {
               </li>
               <li className='py-2'>
                 <Link href={"/about"}>About</Link>
+              </li>
+              <li className='py-2'>
+                <Link href={"/gallery"}>Gallery</Link>
               </li>
             </ul>
 

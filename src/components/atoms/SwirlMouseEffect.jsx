@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import styles from '../../../styles/SwirlMouseEffect.module.css';
+import styles from '../../styles/SwirlMouseEffect.module.css';
 
 const SwirlMouseEffect = () => {
   const canvasRef = useRef(null);

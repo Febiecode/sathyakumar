@@ -20,6 +20,10 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -78,6 +82,20 @@ body {
 }
 .menu-1 a:hover::before{
   transform-origin: 0 50%;
+}
+
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.move-down-animation {
+  animation: moveDown 1s infinite alternate;
 }
 
 

@@ -15,9 +15,9 @@ const HeroBanner = () => {
                         <h2 className='text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl'>I build things for the web.</h2>
                         <a href="/about" className='flex items-center horizontal-underline text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-2xl'>Read more about me <ChevronRight/></a>
                     </div>
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform md:bottom-8">
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform md:bottom-8 move-down-animation">
                         <div className='flex cursor-pointer flex-col items-center justify-center'>
-                            <MoveDown size={20} />
+                            <a href="#gallery"><MoveDown size={20} /></a>
                         </div>
                     </div>
                 </div>
