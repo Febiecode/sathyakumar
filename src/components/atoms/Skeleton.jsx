@@ -1,0 +1,28 @@
+"use client"
+import React from 'react'
+import { useRouter } from 'next/navigation';
+
+function Skeleton({project}) {
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push(project.route);
+    };
+    return (
+        <>
+            <div onClick={handleClick}>
+                <div className='border border-1 border-transparent hover:border hover:border-1 hover:border-[#57575787] flex flex-row justify-center items-center gap-5 w-[300px] bg-[#2020238f] py-3 rounded-lg mt-10 me-20 cursor-pointer'>
+                    <div className='w-[25%] p-2 bg-[#1f1f22] rounded-md'>
+                        <img src={project.imgSrc} className='rounded-full' width={50} height={50} alt="profile" />
+                    </div>
+                    <div className='w-[65%] flex flex-col text-left space-y-1'>
+                        <p className='font-bold capitalize'>{project.title}</p>
+                        <p className='text-gray-400 w-40 overflow-hidden overflow-ellipsis whitespace-nowrap'>{project.description}</p>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default Skeleton

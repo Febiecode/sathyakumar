@@ -8,6 +8,7 @@ const Menu = () => {
                 <nav class="menu menu-1">
                     <ul>
                         <li><a href="/">Home</a></li>
+                        <li><a href="/projects">Projects</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/gallery">Gallery</a></li>
                     </ul>

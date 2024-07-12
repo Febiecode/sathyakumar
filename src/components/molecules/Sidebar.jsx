@@ -20,6 +20,9 @@ const Sidebar = () => {
                 <Link href={"/"}>Home</Link>
               </li>
               <li className='py-2'>
+                <Link href={"/projects"}>Projects</Link>
+              </li>
+              <li className='py-2'>
                 <Link href={"/about"}>About</Link>
               </li>
               <li className='py-2'>
