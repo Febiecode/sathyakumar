@@ -10,7 +10,7 @@ const projects = [
         id: 2,
         imgSrc: "/static/headphone.png",
         title: "Webjr Headphone",
-        description: "E-Commerce",
+        description: "E Commerce",
         route: "/projects/webjr-headphone"
     },
     {
