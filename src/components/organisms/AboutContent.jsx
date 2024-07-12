@@ -15,7 +15,7 @@ const AboutContent = () => {
                                     <h2 className="text-sm font-normal md:text-base">Junior Software Developer at <span className="font-semibold">RapidSoft</span></h2>
                                 </div>
                                 <div>
-                                    <img alt="Dale Larroder" loading="lazy" width="130" height="130" decoding="async" data-nimg="1" className="rounded-full object-scale-down grayscale" src="https://avatars.githubusercontent.com/u/93641901?v=4" style={{ color: "transparent" }} />
+                                    <img alt="Sathyakumar" loading="lazy" width="130" height="130" decoding="async" data-nimg="1" className="rounded-full object-scale-down grayscale" src="https://avatars.githubusercontent.com/u/93641901?v=4" style={{ color: "transparent" }} />
                                 </div>
                             </div>
                             <div className=" max-w-none pb-8 text-justify text-sm dark:prose-dark md:text-lg xl:col-span-2">
