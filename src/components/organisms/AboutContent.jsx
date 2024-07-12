@@ -9,7 +9,11 @@ const AboutContent = () => {
                 <div className='mx-auto max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0'>
                     <main className='mb-auto'>
                         <div className="pt-8">
+                            <div>
+                                
+                            </div>
                             <div className="mb-8 flex flex-col-reverse items-center justify-between sm:flex-row sm:items-center">
+                                
                                 <div className="text-center sm:text-left space-y-3">
                                     <h1 className="text-xl font-bold md:text-3xl lg:text-4xl">Sathyakumar</h1>
                                     <h2 className="text-sm font-normal md:text-base">Junior Software Developer at <span className="font-semibold">RapidSoft</span></h2>

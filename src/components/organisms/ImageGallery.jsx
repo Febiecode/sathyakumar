@@ -7,6 +7,11 @@ const ImageGallery =() => {
 
     const images = [
         {
+            src: "/static/bannerDark.png",
+            colSpan: 'col-span-3',
+            rowSpan: 'row-span-3'
+        },
+        {
             src: "https://media.licdn.com/dms/image/D4D22AQFjQMBEk2U9Vw/feedshare-shrink_1280/0/1709896335740?e=1723680000&v=beta&t=cceE9fp0_7w9wKvDygZn06xoVM7dB8_kq5Fq3TlK-jo",
             colSpan: 'col-span-2',
             rowSpan: 'row-span-1'
