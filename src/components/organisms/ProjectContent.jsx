@@ -8,8 +8,8 @@ const ProjectContent = () => {
             <main>
                 <div className='mx-auto max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0 my-20'>
                     <div className='text-left'>
-                        <h1 className='text-xl font-semibold sm:text-2xl md:text-3xl xl:text-3xl my-5'>Projects</h1>
-                        <p className='sm:w-[700px]'>
+                        <h1 className='text-2xl font-semibold md:text-3xl xl:text-3xl my-5'>Projects</h1>
+                        <p className='sm:w-[700px] text-lg text-h3Subpoints'>
                             I&apos;ve worked on little projects over the years but these are the ones that I&apos;m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas on how it can be improved.
                         </p>
                     </div>

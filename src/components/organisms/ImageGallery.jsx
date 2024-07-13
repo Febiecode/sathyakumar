@@ -3,7 +3,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 
-const ImageGallery =() => {
+const ImageGallery = () => {
 
     const images = [
         {
@@ -63,31 +63,31 @@ const ImageGallery =() => {
 
     return (
         <>
-        <div className='mx-auto max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0'>
-        <h1 className='text-2xl font-semibold sm:text-4xl md:text-5xl xl:text-6xl text-center py-5' id='gallery'>Gallery</h1>
-            <PhotoProvider
-            speed={() => 800}
-            easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
-        >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-                {images.map((item, index) => (
-                    <div
-                        key={index}
-                        className={`${item.colSpan} ${item.rowSpan} relative`}
-                    >
-                        <PhotoView src={item.src}>
-                            <img
-                                src={item.src}
-                                alt={`Image ${index + 1}`}
-                                className="w-full h-full object-cover"
-                            />
-                        </PhotoView>
+            <div className='mx-auto max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0'>
+                <h1 className='text-2xl font-semibold sm:text-4xl md:text-5xl xl:text-6xl text-center py-5 mb-8' id='gallery'>Gallery</h1>
+                <PhotoProvider
+                    speed={() => 800}
+                    easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                >
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2">
+                        {images.map((item, index) => (
+                            <div
+                                key={index}
+                                className={`${item.colSpan} ${item.rowSpan} relative `}
+                            >
+                                <PhotoView src={item.src}>
+                                    <img
+                                        src={item.src}
+                                        alt={`Image ${index + 1}`}
+                                        className="w-full h-full object-cover rounded-bl-lg rounded-br-lg border-t-4 border-double lg:border-t-8 border-t-fuchsia-800 lg:rounded-bl-3xl lg:rounded-br-3xl"
+                                    />
+                                </PhotoView>
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </PhotoProvider>
             </div>
-        </PhotoProvider>
-        </div>
-        
+
         </>
     );
 }
