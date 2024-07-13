@@ -52,8 +52,8 @@ const Naiduhall = () => {
           <div className='mt-10 space-y-5'>
             <h1 className='text-lg font-bold sm:text-md md:text-lg lg:text-xl'>Key Features</h1>
             <ul className='space-y-3 mt-5'>
-              {NaiduhallMetaData.keyFeatures.map(point => (
-                <li className='flex items-center gap-3'>
+              {NaiduhallMetaData.keyFeatures.map((point,index) => (
+                <li className='flex items-center gap-3' key={index}>
                   <div className='w-5'>
                     <CircleDashed size={15} style={{ color: 'purple' }} />
                   </div>
