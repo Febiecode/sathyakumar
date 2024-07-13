@@ -44,7 +44,7 @@ const SnapFilters = () => {
                 <div className='flex justify-center flex-wrap gap-5'>
                     {SnapFiltersMetaData.images.map((image, index) => (
                         <Link href={SnapFiltersMetaData.link[index]} target='blank'>
-                            <img src={image} alt="erpAnswerSnap" className='mt-10 rounded-xl border-2 border-[#57575787]' />
+                            <img src={image} alt="erpAnswerSnap" className='mt-10 rounded-xl border-2 border-[#57575787]' key={index}/>
                         </Link>
                     ))}
                 </div>

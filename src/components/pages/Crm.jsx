@@ -47,8 +47,8 @@ const Crm = () => {
 
       <div className='my-5'>
         <div className='flex justify-center flex-col'>
-          {crmMetaData.images.map(image => (
-            <img src={image} alt="erpAnswerSnap" className='mt-10 rounded-xl border-2 border-[#57575787]' />
+          {crmMetaData.images.map((image, index)=> (
+            <img src={image} alt="erpAnswerSnap" className='mt-10 rounded-xl border-2 border-[#57575787]' key={index}/>
           ))}
         </div>
 
