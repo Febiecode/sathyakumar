@@ -1,16 +1,15 @@
 'use client'
 import React from 'react'
-import Navbar from '@/components/organisms/Navbar'
-import Footer from '@/components/organisms/Footer'
-import Naiduhall from '@/components/pages/Naiduhall'
 
+import Naiduhall from '@/components/pages/Naiduhall'
+import MainLayout from "@/components/layouts/MainLayout";
 const page = () => {
   return (
-    <div>
-      <Navbar />
+    <MainLayout>
+
       <Naiduhall />
-      <Footer />
-    </div>
+
+    </MainLayout>
   )
 }
 

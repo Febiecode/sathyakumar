@@ -1,16 +1,15 @@
-import About from '@/components/pages/About'
-import Navbar from '@/components/organisms/Navbar'
-import Footer from '@/components/organisms/Footer'
 import React from 'react'
+import About from '@/components/pages/About'
+import MainLayout from "@/components/layouts/MainLayout";
 
 const page = () => {
   return (
-    <div>
-      <Navbar />
-      <About />
-      <Footer />
+    <MainLayout>
 
-    </div>
+      <About />
+
+
+    </MainLayout>
   )
 }
 

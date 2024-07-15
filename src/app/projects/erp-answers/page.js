@@ -1,16 +1,14 @@
 'use client'
 import React from 'react'
-import Navbar from '@/components/organisms/Navbar'
-import Footer from '@/components/organisms/Footer'
 import ErpAnswers from '@/components/pages/ErpAnswers'
-
+import MainLayout from "@/components/layouts/MainLayout";
 const page = () => {
   return (
-    <div>
-      <Navbar />
+    <MainLayout>
+
       <ErpAnswers />
-      <Footer />
-    </div>
+
+    </MainLayout>
   )
 }
 

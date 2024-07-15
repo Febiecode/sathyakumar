@@ -79,7 +79,7 @@ const ImageGallery = () => {
                                     <img
                                         src={item.src}
                                         alt={`Image ${index + 1}`}
-                                        className="w-full h-full object-cover rounded-bl-lg rounded-br-lg border-t-4 border-double lg:border-t-8 border-t-fuchsia-800 lg:rounded-bl-3xl lg:rounded-br-3xl"
+                                        className="w-full h-full object-cover rounded-bl-lg rounded-br-lg border-t-4 border-double lg:border-t-8 border-t-[#004AAD] lg:rounded-bl-3xl lg:rounded-br-3xl"
                                     />
                                 </PhotoView>
                             </div>

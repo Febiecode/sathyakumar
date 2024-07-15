@@ -59,14 +59,14 @@ const SnapFilters = () => {
                             {SnapFiltersMetaData.keyFeatures.map((point,index) => (
                                 <li className='flex items-center gap-3' key={index}>
                                     <div className='w-5'>
-                                        <CircleDashed size={15} style={{ color: 'purple' }} />
+                                        <CircleDashed size={15} style={{ color: '#004AAD' }} />
                                     </div>
                                     <p>{point}</p>
                                 </li>
                             ))}
                         </ul>
 
-                        <div className=' bg-[#2020238f] p-5 rounded-md border border-1 border-[#57575787] flex flex-col md:flex-row lg:flex-row justify-center items-center'>
+                        <div className=' dark:bg-[#2020238f] bg-Light p-5 rounded-md border border-1 border-[#57575787] flex flex-col md:flex-row lg:flex-row justify-center items-center'>
                             <div>
                                 <h1 className='text-sm font-bold sm:text-sm'>Build with:</h1>
                             </div>

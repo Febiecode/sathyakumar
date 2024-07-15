@@ -35,21 +35,30 @@ const SwirlMouseEffect = () => {
       constructor() {
         this.x = mouse.x;
         this.y = mouse.y;
-        this.size = Math.random() * 5 + 1;
+        this.size = Math.random() * 20 + 5;
         this.speedX = Math.random() * 3 - 1.5;
         this.speedY = Math.random() * 3 - 1.5;
         this.color = `hsl(${hue}, 100%, 50%)`;
+        this.history = [{ x: this.x, y: this.y }];
       }
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
+        this.history.push({ x: this.x, y: this.y });
+        if (this.history.length > 10) {
+          this.history.shift();
+        }
         this.size -= 0.05;
       }
       draw() {
-        ctx.fillStyle = this.color;
+        ctx.strokeStyle = this.color;
+        ctx.lineWidth = this.size;
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
+        for (let i = 0; i < this.history.length - 1; i++) {
+          ctx.moveTo(this.history[i].x, this.history[i].y);
+          ctx.lineTo(this.history[i + 1].x, this.history[i + 1].y);
+        }
+        ctx.stroke();
       }
     }
 
